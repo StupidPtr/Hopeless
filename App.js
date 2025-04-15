@@ -83,37 +83,52 @@ export default function ContactPage() {
       <footer className="footer">
         <p className="footer-logo">Logo Here</p>
         <div className="footer-container">
-          <div className="footer-column">
-            <h4>Reach us</h4>
-            <p>+012 3456 789</p>
-            <p>demo@gmail.com</p>
-            <p>132 Dartmouth Street Boston,<br />Massachusetts 02156 United States</p>
-          </div>
-          <div className="footer-column">
-            <h4>Company</h4>
-            <p>About</p>
-            <p>Contact</p>
-            <p>Blogs</p>
-          </div>
-          <div className="footer-column">
-            <h4>Legal</h4>
-            <p>Privacy Policy</p>
-            <p>Terms & Services</p>
-            <p>Refund Policy</p>
-          </div>
-          <div className="footer-column">
-            <h4>Quick Links</h4>
-            <p>Techlabz Keybox</p>
-            <p>Downloads</p>
-            <p>Forum</p>
-          </div>
-          <div className="footer-column footer-email-button">
-            <h4 className="footer-h4">Join Our Newsletter</h4>
-            <div className="footer-form">
-              <input type="email" placeholder="Your email address" />
-              <button>Subscribe</button>
+          <div className="wrapper-1">
+            <div className="footer-column">
+              <ul>              
+                <li>Reach us</li>
+                <li>+012 3456 789</li>
+                <li>demo@gmail.com</li>
+                <li>132 Dartmouth Street Boston,<br /> Massachusetts 02156 United States</li>
+              </ul>
             </div>
-            <p className="footer-description">* Will send you weekly updates for your better food management</p>
+          </div>
+          <div className="wrapper-2">
+            <div className="footer-column">
+              <ul>
+                <li>Company</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Blogs</li>
+              </ul>
+            </div>
+            <div className="footer-column">
+              <ul>
+                <li>Legal</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Services</li>
+                <li>Terms of Use</li>
+                <li>Refund Policy</li>
+              </ul>
+            </div>
+            <div className="footer-column">
+              <ul>
+                <li>Quick Links</li>
+                <li>Techlabz Keybox</li>
+                <li>Downloads</li>
+                <li>Forum</li>
+              </ul>
+            </div>
+          </div>
+          <div className="wrapper-3">
+            <div className="container-footer">
+              <h4 className="footer-h4">Join Our Newsletter</h4>
+              <div className="footer-form">
+                <input type="email" placeholder="Your email address" />
+                <button>Subscribe</button>
+              </div>
+              <p className="footer-description">* Will send you weekly updates for your better food management</p>
+            </div>
           </div>
         </div>
       </footer>

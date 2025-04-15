@@ -1,8 +1,10 @@
 /* ===== Общие стили ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins;
   background-color: #ffffff3f;
   color: #000;
 }
@@ -59,6 +61,8 @@ a {
   max-width: 1300px;
   margin: 0 auto;
   align-items: flex-start;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* ===== Contact Info (Left Side) ===== */
@@ -190,19 +194,29 @@ a {
 }
 
 .footer-container {
-  max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: flex;
+  justify-content: space-around;
   border-top: 1px solid #eee;
 }
 
-.footer-column h4 {
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #fff;
+.footer-column {
+  margin: 0px 50px;
 }
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column li {
+  margin: 25px 10px;
+}
+
+.footer-column li:first-child{
+  font-weight: bold;
+  font-size: 20px;
+}
+
 
 .footer-column p {
   font-size: 13px;
@@ -210,16 +224,16 @@ a {
   color: #ccc;
 }
 
-.footer-column input[type="email"] {
+.wrapper-3 input[type="email"] {
   flex: 1;
   padding: 0.8rem;
   border: 2px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 
-.footer-column button {
+.wrapper-3 button {
   padding: 0.8rem 2rem;
   background-color: #4a90e2;
   color: white;
@@ -229,32 +243,44 @@ a {
   cursor: pointer;
 }
 
-.footer-email-button {
-  max-width: 400px;
-  margin: 1rem auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: #252222ce;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
 .footer-h4 {
   text-align: left;
   font-size: 1.5rem;
-  color: #2d3436;
-  margin-bottom: 1rem;
+  color: #ccc;
+  margin: 22px 0;
+  padding: 0 10px;
 }
 
 .footer-form {
   display: flex;
   margin-bottom: 1rem;
+  padding: 10px;
 }
 
 .footer-description {
-  font-size: 0.9rem;
+  text-align: left;
   color: #636e72;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 400px;
+  padding: 0 10px;
+}
+
+.wrapper-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.wrapper-3 {
+  max-width: 400px;
+}
+
+.container-footer {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  background-color: #252222ce;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
